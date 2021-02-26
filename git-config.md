@@ -19,6 +19,7 @@ git config --global alias.cm "commit -a"
 git config --global alias.dt difftool
 git config --global alias.mt mergetool
 git config --global alias.last "log -1 HEAD"
+git config --global alias.wipe \!"git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard"
 ```
 
 More [here](https://githubtraining.github.io/training-manual/#/app_aliases), [here](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases), [here](https://haacked.com/archive/2014/07/28/github-flow-aliases/), [here](https://haacked.com/archive/2015/06/29/git-migrate/) and [there](https://haacked.com/archive/2017/01/04/git-alias-open-url/).
