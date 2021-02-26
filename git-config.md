@@ -1,3 +1,5 @@
+If not on a Bash-like terminal, you may have to review escape characters.
+
 ### User-specific configuration
 ```bash
 git config --global user.username jdoe
@@ -9,11 +11,16 @@ git config --global user.email john.doe@domain.org
 ```bash
 git config --global alias.st status
 git config --global alias.co checkout
+git config --global alias.aa "add -A"
+git config --global alias.cob "checkout -b"
 git config --global alias.br branch
-git config --global alias.cm commit
+git config --global alias.cm "commit -a"
 git config --global alias.dt difftool
 git config --global alias.mt mergetool
+git config --global alias.last "log -1 HEAD"
 ```
+
+More [here](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases), [here](https://haacked.com/archive/2014/07/28/github-flow-aliases/), [here](https://haacked.com/archive/2015/06/29/git-migrate/) and [there](https://haacked.com/archive/2017/01/04/git-alias-open-url/).
 
 ### Diff & Merge using `meld`
 ```bash
